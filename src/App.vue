@@ -43,6 +43,7 @@ const imageList = computed(() => {
   font-size: 2rem;
   line-height: 1.9;
   font-weight: bold;
+  text-align: center;
 }
 
 .container {
@@ -50,7 +51,7 @@ const imageList = computed(() => {
   max-width: 1300px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
 }
 </style>
